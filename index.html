@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Global Dashboard</title>
+
+<link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css">
+<link rel="stylesheet" href="/style.css">
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="https://unpkg.com/globe.gl"></script>
+</head>
+
+<body>
+
+<div class="sidebar">
+  <h2>🌍 Global Intel</h2>
+
+  <button onclick="toggleView()">2D / 3D</button>
+  <button onclick="loadNews()">Latest News</button>
+  <button onclick="loadStock()">Markets</button>
+</div>
+
+<div id="map"></div>
+<div id="globe"></div>
+
+<div id="info">Click any city marker</div>
+
+<div class="livebar">
+
+  <iframe
+    src="https://www.youtube.com/embed/bNyUyrR0PHo?mute=1"
+    allowfullscreen>
+  </iframe>
+
+  <iframe
+    src="https://www.youtube.com/embed/NQjabLGdP5g?mute=1"
+    allowfullscreen>
+  </iframe>
+
+  <iframe
+    src="https://www.youtube.com/embed/9Auq9mYxFEE?mute=1"
+    allowfullscreen>
+  </iframe>
+
+</div>
+
+<script src="/script.js"></script>
+</body>
+</html>
